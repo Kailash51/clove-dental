@@ -1,135 +1,707 @@
-/* ========== HEADER STYLES ========== */
-.header {
-  background: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+/* Base styles and resets */
+* {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
 }
 
-.header-container {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 0 20px;
+:root {
+  --brown: #462512;
+  --orange: #f58420;
+  --beige-bk: #ffe0c4;
+  --white: #ffffff;
+  --text-1: #303030;
+  --text-2: #474747;
+  --strokes: #ffe0c4;
+  --background: #fff9f4;
+}
+
+body {
+  background-color: var(--background);
+}
+
+/* Header styles */
+.frame-260934835 {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
+  flex-direction: column;
+  background-color: var(--background);
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
 }
 
-/* Logo */
-.header-logo {
+.frame-260934835__frame-2609440 {
+  background: var(--beige-bk);
+  align-self: stretch;
   flex-shrink: 0;
+  height: 60px;
+  background-color: var(--background);
+  padding-bottom: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
-.logo-img {
-  height: 50px;
-  width: auto;
+.frame-260934835__frame-260934733 {
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: space-between;
+  position: absolute;
+  left: 60px;
+  right: 60px;
+  top: 16px;
 }
 
-/* Navigation */
-.header-nav {
+.frame-260934835__frame-260934855 {
+  flex-shrink: 0;
+  width: 94px;
+  height: 38px;
+  position: relative;
+}
+
+.frame-260934835__clove-logo {
+  width: 128px;
+  height: 32px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  overflow: visible;
+}
+
+.frame-260934835__frame-2609444 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.frame-260934835__frame-52404 {
+  background: #f8943f;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #de6f0d;
+  border-width: 1px;
+  padding: 8px 12px 8px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 200px;
+  height: 38px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Hide desktop button on mobile */
+@media (max-width: 768px) {
+  .frame-260934835__frame-52404 {
+    display: none !important;
+  }
+}
+
+.frame-260934835__book-an-appointment {
+  flex-shrink: 0;
+  width: 19px;
+  height: 21px;
+  position: relative;
+  overflow: visible;
+}
+
+.frame-260934835__book-appointment {
+  color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+.frame-260934835__frame-52405 {
+  background: #ffffff;
+  border-radius: 70px;
+  border-style: solid;
+  border-color: var(--brown);
+  border-width: 1px;
+  padding: 8px 12px 8px 12px;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 38px;
+  position: relative;
+}
+
+.frame-260934835__get-a-call-back {
+  flex-shrink: 0;
+  width: 12px;
+  height: 21px;
+  position: relative;
+  overflow: visible;
+}
+
+.frame-260934835___985-6589-510 {
+  color: #1a1a1a;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Hero section styles */
+.hero-container {
+  display: flex;
+  margin: 0px auto;
+  padding: 0 0px;
+  margin-bottom: 10px;
+  gap: 0px;
+}
+
+.hero-left {
+  flex: 2;
+  position: relative;
+}
+
+.frame-260934857 {
+  background: #d0d0d0;
+  flex-shrink: 0;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.frame-260934857__empty-stomatology-orthodontist-bright-office-room-with-nobody-it-1 {
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: blur(3px);
+  object-fit: cover;
+}
+
+.frame-260934857__frame-52496 {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  padding: 24px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 60%;
+  max-width: 644px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  backdrop-filter: blur(7.5px);
+}
+
+.frame-260934857__frame-52498 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 70%;
+  min-width: 200px;
+  position: relative;
+}
+
+.frame-260934857__your-smile-our-priority-at-clove-dental {
+  color: #303030;
+  text-align: left;
+  font-size: 2.25rem;
+  line-height: 110%;
+  font-weight: 800;
+  position: relative;
+}
+
+.frame-260934857__expert-rct-zero-pain-right-here-in-delhi {
+  color: #4e4e4e;
+  text-align: left;
+  font-size: 1.125rem;
+  line-height: 130%;
+  font-weight: 600;
+  position: relative;
+  align-self: stretch;
+}
+
+.frame-260934857__frame-52400 {
+  background: #f8943f;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #de6f0d;
+  border-width: 1px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 38px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.frame-260934857__book-appointment {
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Desktop (default) */
+.frame-260934857__i-phone-13-14-11-removebg-preview-1 {
+  width: 40vw;
+  max-width: 314px;
+  height: auto;
+  position: absolute;
+  left: 40%;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+
+/* Mobile override */
+@media (max-width: 768px) {
+  .frame-260934857__i-phone-13-14-11-removebg-preview-1 {
+    position: relative;
+    width: 60vw; /* scale a bit larger */
+    max-width: 220px;
+    top: 35%;
+    left: 50%;
+    margin: 20px auto 0; /* center horizontally */
+    /* display: block; */
+  }
+}
+
+/* Right form section */
+.hero-right {
   flex: 1;
   display: flex;
-  justify-content: center;
-}
-
-.nav-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 40px;
-}
-
-.nav-item {
-  margin: 0;
-}
-
-.nav-link {
-  color: #1a1a1a;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  transition: color 0.3s ease;
-  padding: 10px 0;
-}
-
-.nav-link:hover {
-  color: #F58420;
-}
-
-/* CTA Button */
-.header-cta {
-  flex-shrink: 0;
-}
-
-.header-cta .btn {
-  background: #F58420;
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 25px;
-  font-weight: 600;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.header-cta .btn:hover {
-  background: #e67a2b;
-}
-
-/* Mobile Menu Toggle */
-.mobile-menu-toggle {
-  display: none;
   flex-direction: column;
-  background: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.group-2 {
+  flex-shrink: 0;
+  background-color: #fff9f4;
+  position: relative;
+  padding: 24px;
+  height: 450px;
+  border-radius: 0px;
+}
+
+.group-2__frame-2609489 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex;
+  justify-content: flex-start;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.group-2__get-expert-dental-guidance-in-delhi {
+  color: var(--text-1);
+  text-align: left;
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+
+.group-2__book-your-free-consultation-today-and-take-the-first-step-towards-healthy-beautiful-teeth {
+  color: var(--text-2);
+  text-align: left;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+
+.group-2__frame-2609501 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.group-2__frame-2609500 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.group-2__frame-2609491,
+.group-2__frame-2609492,
+.group-2__frame-2609493 {
+  background: #ffffff;
+  border-radius: 24px;
+  border-style: solid;
+  border-color: var(--strokes);
+  border-width: 1px;
+  padding: 14px 16px 14px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 38px;
+  position: relative;
+}
+
+.group-2__name,
+.group-2__mobile-number,
+.group-2__captcha {
+  color: #777777;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
   border: none;
+  outline: none;
+  width: 100%;
+}
+
+.group-2__frame-260934896 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.group-2__frame-2609493 {
+  border-radius: 24px 0px 0px 24px;
+  flex: 1;
+}
+
+.group-2__frame-2609503 {
+  background: var(--brown);
+  border-radius: 0px 24px 24px 0px;
+  padding: 17px 16px 17px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 110px;
+  height: 38px;
+  position: relative;
+}
+
+.group-2___1514 {
+  color: var(--white);
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  width: 40px;
+}
+
+.group-2__frame-26095032 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.group-2__rectangle-3045 {
+  background: #ffffff;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: var(--strokes);
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 19px;
+  height: 19px;
+  position: relative;
   cursor: pointer;
-  padding: 8px;
-  gap: 4px;
 }
 
-.hamburger-line {
-  width: 25px;
-  height: 3px;
-  background: #1a1a1a;
-  transition: all 0.3s ease;
+.group-2__i-agree-to-clove-dental-s-terms-and-privacy-policy-and-consent-to-contact-via-phone-email-or-sms {
+  color: var(--text-1);
+  text-align: left;
+  font-size: 12px;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
 }
 
-/* Mobile Styles */
+.i-agree-to-clove-dental-s-terms-and-privacy-policy-and-consent-to-contact-via-phone-email-or-sms-span2 {
+  text-decoration: underline;
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.group-2__frame-26094932 {
+  background: var(--orange);
+  border-radius: 24px;
+  padding: 14px 16px 14px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.group-2__book-a-free-consultation {
+  color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Stats slider section */
+.stats-section {
+  margin: 0px auto;
+  background-color: #fff9f4;
+  padding: 0 0px;
+}
+
+.frame-260934825 {
+  height: 38.28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-260934825__frame-260934824 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  animation: scrollStats 30s linear infinite;
+}
+
+.frame-260934825__pointer-01,
+.frame-260934825__pointer-02,
+.frame-260934825__pointer-03,
+.frame-260934825__pointer-04,
+.frame-260934825__pointer-05 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.frame-260934825__clinics,
+.frame-260934825__happy-patients,
+.frame-260934825__implant {
+  flex-shrink: 0;
+  width: 34.6px;
+  height: 38.28px;
+  position: relative;
+  overflow: visible;
+}
+
+.frame-260934825__frame-158 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.frame-260934825___600-clinics,
+.frame-260934825___1300-dentists,
+.frame-260934825___30-l-happy-patients,
+.frame-260934825___35-k-ortho-cases,
+.frame-260934825___55-k-implants-placed {
+  text-align: left;
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 700;
+  position: relative;
+  white-space: nowrap;
+}
+
+._600-clinics-span,
+._1300-dentists-span,
+._30-l-happy-patients-span,
+._35-k-ortho-cases-span,
+._55-k-implants-placed-span {
+  color: var(--orange);
+}
+
+._600-clinics-span2,
+._1300-dentists-span2,
+._30-l-happy-patients-span2,
+._35-k-ortho-cases-span2,
+._55-k-implants-placed-span2 {
+  color: #000000;
+}
+
+.frame-260934825__frame-610 {
+  flex-shrink: 0;
+  width: 33.3px;
+  height: 38.28px;
+  position: relative;
+}
+
+.frame-260934825__smile-makeover {
+  width: 65.83%;
+  height: 57.27%;
+  position: absolute;
+  right: 16.07%;
+  left: 18.1%;
+  bottom: 42.73%;
+  top: 0%;
+  overflow: visible;
+}
+
+.frame-260934825__doctors {
+  width: 100.01%;
+  height: 43.71%;
+  position: absolute;
+  right: -0.02%;
+  left: 0.01%;
+  bottom: 0%;
+  top: 56.29%;
+  overflow: visible;
+}
+
+.frame-260934825__frame-260934760 {
+  flex-shrink: 0;
+  width: 36.68px;
+  height: 38px;
+  position: relative;
+}
+
+.frame-260934825__vector {
+  width: 85.81%;
+  height: 80.86%;
+  position: absolute;
+  right: 14.19%;
+  left: 0%;
+  bottom: 0.84%;
+  top: 18.31%;
+  overflow: visible;
+}
+
+.frame-260934825__vector2 {
+  width: 24.04%;
+  height: 6.94%;
+  position: absolute;
+  right: 36.31%;
+  left: 39.65%;
+  bottom: 75.96%;
+  top: 17.1%;
+  overflow: visible;
+}
+
+.frame-260934825__vector3 {
+  width: 85.81%;
+  height: 87%;
+  position: absolute;
+  right: 9.64%;
+  left: 4.55%;
+  bottom: 0%;
+  top: 13%;
+  overflow: visible;
+}
+
+.frame-260934825__frame-260934759 {
+  width: 15.01px;
+  height: 16.67px;
+  position: absolute;
+  left: 21.68px;
+  top: 0px;
+  overflow: visible;
+}
+
+/* Animation for scrolling stats */
+@keyframes scrollStats {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .frame-260934857__frame-52496 {
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
-  .header-container {
-    padding: 0 16px;
-    height: 70px;
+  .frame-260934835__frame-260934733 {
+    width: 100%;
+    left: 20px;
+    padding-right: 20px;
   }
-  
-  .header-nav {
-    display: none;
-  }
-  
-  .mobile-menu-toggle {
-    display: flex;
-  }
-  
-  .header-cta .btn {
-    padding: 10px 20px;
-    font-size: 13px;
-  }
-  
-  .logo-img {
-    height: 40px;
-  }
-}
 
-@media (max-width: 480px) {
-  .header-container {
-    padding: 0 12px;
+  .hero-container {
+    padding: 0 20px;
   }
-  
-  .header-cta {
-    display: none;
+
+  .frame-260934857__frame-52496 {
+    padding: 24px;
+  }
+
+  .stats-section {
+    padding: 0 0px;
   }
 }
